@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/150x150" width="150" height="150" alt="Логотип сайта «Седона»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"></button>
+        <div class="main-nav__wrapper">
+          <ul compact="main-nav__list site-list">
+            <li class="site-list__item">
+                  <a href="index.html">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="photo.html">Фото и видео</a>
+                </li>
+                <li class="site-list__item site-list__item--active">
+                  <a>Форма отзыва</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#">HTML Academy</a>
+                </li>
+          </ul>
+        </div>
+      </nav>
+      <img class="intro-img intro-img--form" src="http://placehold.it/300x300" width="300" height="300" alt="Приветственный баннер сайта «Седона»">
+    </header>
+
+    <main class="page-form">
+      <h1 class="page-form__heading visually-hidden">Форма обратной связи на сайте о городе Седона</h1>
+      <section class="review">
+        <h2 class="review__heading">Оставьте свой отзыв</h2>
+        <p class="review__call">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+
+
+        <form class="review__form" method="get" action="https://echo.htmlacademy.ru">
+          <div class="review__wrapper">
+            <h2 class="review__heading">Представьтесь:</h2>
+            <label>
+              <span class="review__input-description">Имя*:</span>
+              <input type="text" name="name" value="Петр">
+            </label>
+            <label>
+              <span class="review__input-description">Фамилия*:</span>
+              <input type="text" name="surname" value="Иванов">
+            </label>
+            <label>
+              <span class="review__input-description">Отчество:</span>
+              <input type="text" name="patronyc" value="Александрович">
+            </label>
+          </div>
+          <div class="review__wrapper">
+            <h2 class="review__heading">Контактная информация:</h2>
+            <label>
+              <span class="review__input-description">Контактный телефон*:</span>
+              <input type="tel" name="phone" placeholder="Введите телефон"><span class="review__icon review__icon--phone"></span>
+            </label>
+            <label>
+              <span class="review__input-description">Электронная почта*:</span>
+              <input type="e-mail" name="email" placeholder="Введите e-mail"><span class="review__icon review__icon--mail"></span>
+            </label>
+          </div>
+          <div class="review__wrapper">
+            <h2 class="review__heading">Ваше общее впечатление:</h2>
+            <label>
+              <span class="review__input-item">Скорее положительное</span>
+              <input type="radio" checked name="positive">
+            </label>
+            <label>
+              <span class="review__input-item">Скорее отрицательное</span>
+              <input type="radio" name="negative">
+            </label>
+            <label>
+              <span class="review__input-item">Затрудняюсь ответить</span>
+              <input type="radio" name="no-answer">
+            </label>
+          </div>
+          <div class="review__wrapper">
+            <h2 class="review__heading">Посещенные достопримечательности:</h2>
+            <label>
+              <span class="review__input-item">Мост Дьявола</span>
+              <input type="checkbox" checked name="bridge">
+            </label>
+            <label>
+              <span class="review__input-item">Гора-Колокол</span>
+              <input type="checkbox" checked name="mountain">
+            </label>
+            <label>
+              <span class="review__input-item">Слайд-парк</span>
+              <input type="checkbox" checked name="park">
+            </label>
+            <label>
+              <span class="review__input-item">Красные скалы</span>
+              <input type="checkbox" name="rocks">
+            </label>
+          </div>
+          <div class="review__wrapper">
+            <h2 class="review__heading">Опишите свои эмоции:</h2>
+            <textarea class="review__textarea" placeholder="Опишите подробно все свои восторги" name="emotions"></textarea>
+          </div>
+          <p class="review__note">* – Обязательные поля</p>
+          <button class="review__button" type="submit">Отправить отзыв</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__hashtag hashtag">#VISITSEDONA</p>
+      <div class="page-footer__social social">
+          <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="#"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="#"></a>
+              </li>
+          </ul>
+        </div>
+        <div class="page-footer__developer developer">
+          <p class="page-footer__caption">Разработано</p>
+          <a class="page-footer__link"><img class="page-footer__developer-logo" src="http://placehold.it/70x70" width="70" height="70" alt="Логотип HTML Academy"></a>
+
+        </div>
+    </footer>
+
+  </body>
+</html>
